@@ -1,0 +1,126 @@
+$primaryColor: #009dae;
+$secondaryColor: #71dfe7;
+
+.singleProduct{
+    grid-template-columns: 1fr 1.3fr;
+    grid-gap: 4rem;
+    padding: 5rem 0;
+
+    a{
+        display: inline-block;
+        color: $secondaryColor;
+        text-decoration: none;
+        transition: all 0.3s ease;
+
+        &:hover{
+            color: $primaryColor;
+        }
+    }
+
+    .title{
+        font-size: 2.2rem;
+        margin-bottom: 1.5rem;
+    }
+    .category{
+        margin-bottom: .8rem;
+    }
+    .shop{
+        margin-bottom: 2rem;
+    }
+    .price{
+        font-size: 3rem;
+        color: $primaryColor;
+        margin-bottom: .5rem;
+    }
+    .originalPrice{
+        font-size: 1.4rem;
+        color: #9e9e9e;
+        text-decoration: line-through;
+    }
+
+    .productActions{
+        margin-top: 4rem;
+
+        .quantity{
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+
+            p{
+                font-size: 1.5rem;
+                color: #757575;
+                margin-right: 2.5rem;
+            }
+
+            button{
+                width: 3.2rem;
+                height: 3.2rem;
+                font-size: 2rem;
+                color: #fff;
+                background-color: $secondaryColor;
+                border: none;
+                outline: 0;
+                cursor: pointer;
+                transition: all 0.3s ease;
+
+                &:hover{
+                    background-color: $primaryColor;
+                }
+
+                &.disable{
+                    background-color: rgba($secondaryColor, 0.5);
+                    cursor: not-allowed;
+
+                    &:hover{
+                        background-color: rgba($secondaryColor, 0.5);
+                    }
+                }
+            }
+
+            .counter{
+                display: inline-block;
+                width: 3.2rem;
+                text-align: center;
+                margin: 0 0.3rem;
+            }
+        }
+
+        .interestAction{
+            display: flex;
+            align-items: center;
+
+            button{
+                font-size: 1.6rem;
+                color: #fff;
+                background-color: $secondaryColor;
+                padding: 1rem 2rem;
+                border: none;
+                outline: 0;
+                transition: all 0.3s ease;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: $primaryColor;
+                }
+
+                &:not(:last-child){
+                    margin-right: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+.productDetails{
+    padding: 1rem;
+
+    .detailHeader{
+        background-color: rgba($secondaryColor, 0.3);
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .description{
+        padding: 1rem;
+    }
+}

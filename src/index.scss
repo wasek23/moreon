@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+$primaryColor: #009dae;
+$secondaryColor: #71dfe7;
+
+// Common
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	font-size: 62.5%;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.5rem;
+}
+
+.container{
+	max-width: 1140px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+img{
+	width: 100%;
+	max-width: 100%;
+}
+
+.btn{
+    text-decoration: none;
+    color: #fff;
+    background-color: $primaryColor;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: none;
+    outline: 0;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+// Columns
+.grid{
+	display: grid;
+    grid-gap: 2rem 1rem;
+}
+@for $i from 1 through 12 {
+    .col-#{$i}{
+        grid-template-columns: repeat(#{$i}, 1fr);
+    }
+}
+@media (max-width: 768px) {
+    @for $i from 1 through 12 {
+        .col-t-#{$i}{
+            grid-template-columns: repeat(#{$i}, 1fr);
+        }
+    }
+}
+@media (max-width: 576px) { 
+    @for $i from 1 through 12 {
+        .col-m-#{$i}{
+            grid-template-columns: repeat(#{$i}, 1fr);
+        }
+    }
+}

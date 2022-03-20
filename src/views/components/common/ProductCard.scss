@@ -1,0 +1,36 @@
+$primaryColor: #009dae;
+$secondaryColor: #71dfe7;
+
+.productCard{
+    padding-bottom: 1rem;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+
+    &:hover{
+        box-shadow: 0 2px 4px 0 rgba($secondaryColor, 0.5);
+    }
+
+    img{
+        width: 100%;
+        height: 19rem;
+        object-fit: contain;
+    }
+
+    .details{
+        padding: 0 .8rem;
+    }
+    .title{
+        font-size: 1.5rem;
+        margin-bottom: .5rem;
+    }
+    .price{
+        font-size: 1.8rem;
+        color: $primaryColor;
+        margin-bottom: .5rem;
+    }
+    .originalPrice{
+        font-size: 1.2rem;
+        color: #9e9e9e;
+        text-decoration: line-through;
+    }
+}

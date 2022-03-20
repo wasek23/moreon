@@ -1,0 +1,13 @@
+{
+    "extends": [
+        "react-app"
+    ]
+    // "rules": {
+    //     "prettier/prettier": ["error", {
+    //         "singleQuote": true,
+    //         "tabWidth": 4,
+    //         "useTabs": true,
+    //         "printWidth": 105
+    //     }]
+    // }
+}

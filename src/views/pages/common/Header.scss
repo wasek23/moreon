@@ -1,0 +1,57 @@
+$primaryColor: #009dae;
+$secondaryColor: #71dfe7;
+
+.headerTop{
+    background-color: rgba($secondaryColor, .3);
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo{
+        display: inline-block;
+        width: 200px;
+    }
+
+    .menu{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin: 0 20px 0 auto;
+
+        .menuLink{
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: $primaryColor;
+        }
+    }
+
+    .search{
+        display: flex;
+        align-items: stretch;
+
+        input{
+            width: 350px;
+            padding: 12px 15px;
+            border: none;
+            outline: none;
+
+            &:focus{
+                border: 1px solid $primaryColor;
+                outline: none;
+            }
+        }
+
+        button{
+            color: #fff;
+            background-color: $primaryColor;
+            border: none;
+
+            i{
+                padding: 8px;
+            }
+        }
+    }
+}
